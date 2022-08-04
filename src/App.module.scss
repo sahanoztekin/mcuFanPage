@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  margin-inline: auto;
+  overflow-x: hidden;
+}
+
+.container {
+  
+  display: flex;
+width: 100vw;
+
+}
+
+// .guney::-webkit-scrollbar{
+//   display: none;
+// }
+
+// .guney{
+//   overflow: scroll;
+//   max-height: 25px;
+//   height: auto;
+//   border: 2px solid black;
+
+// }
