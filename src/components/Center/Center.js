@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react'
 import Style from "./Center.module.scss"
 import InfoHeader from "../InfoHeader/InfoHeader"
-import DetailHeader from '../DetailHeader/DetailHeader'
 import Detail from '../Detail/Detail'
-import Info from '../Info/Info'
 import { useState } from 'react'
 
 function Center({ data }) {

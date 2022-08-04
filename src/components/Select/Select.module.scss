@@ -18,6 +18,17 @@
     font-family: 'Lemon/Milk', sans-serif;
     font-size: 57.34px;
     position: relative;
+    opacity: 0;
+    filter: blur(7px);
+    animation: fade-in 1s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
+    @keyframes fade-in {
+        100% {
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+
 }
 
 .line {
@@ -26,20 +37,22 @@
     width: 2px;
 
 }
-.next_prev{
+
+.next_prev {
     display: flex;
     flex-direction: column;
 
 }
 
-    button {
-        border-radius: 50%;
-        background-color: white;
-        cursor: pointer;
-        transition: 400ms;
-        border: none;
-        &:hover {
-            background-color: rgb(231, 231, 231);
-        }
-    
+button {
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    transition: 400ms;
+    border: none;
+
+    &:hover {
+        background-color: rgb(231, 231, 231);
     }
+
+}

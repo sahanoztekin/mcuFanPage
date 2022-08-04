@@ -1,19 +1,11 @@
 .sidebar {
-    // position: fixed;
-    // top: 0;
-    // left: 0;
     height: 100vh;
-    // width: 385px;
-    // background-color: rgb(255, 255, 255);
-    // color: black;
-    // padding: 6px 14px;
     display: flex;
     align-items: center;
     background-color: white;
     flex-grow: 1;
-    // flex: 0 1 20%;
-    // min-width: 385px;
     width: 100vw;
+
     .line {
 
         border: 2px solid #000000;
