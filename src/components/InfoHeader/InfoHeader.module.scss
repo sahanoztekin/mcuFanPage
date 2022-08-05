@@ -41,10 +41,11 @@
 
 .heroInfo {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    margin-left: 240px;
+    margin-left: 123px;
     margin-top: -20px;
     position: absolute;
     font-size: 30px;
+    width: 40ch;
 
 }
 
@@ -54,4 +55,19 @@
     margin-top: -20px;
     margin-left: 12%;
     width: 40ch;
+}
+
+select{
+    padding: 10px 15px;
+    font-size: 18px;
+    width: 220px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 94, 0);
+}
+
+.heroName{
+    margin-left: 126px;
+    width: 40ch;
+    word-break: break-all;
 }

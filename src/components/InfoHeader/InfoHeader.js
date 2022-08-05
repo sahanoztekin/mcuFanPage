@@ -19,9 +19,13 @@ const Detail = ({ data, setSelect, setHideDetail, hideDetail, select }) => {
 
   const selectStyleObj = {
     position: "absolute",
-    left: "60px",
+    right: "0",
+    top: "60px",
     height: "60px",
-    background:"#333",
+    borderRadius: "8px",
+    backgroundColor: "transparent",
+    border: "2px solid rgb(255, 94, 0)",
+    color: "white",
   }
 
   return (
@@ -31,9 +35,9 @@ const Detail = ({ data, setSelect, setHideDetail, hideDetail, select }) => {
       </div>
             
         {/* <ul> */}
-          {data?.comics == "Marvel" && <p className={Style.detailHero}>The cinematic universe was first presented in 2008 with Iron Man and reached 29 films in 14 years.</p> || <select style={hideDetail ? selectStyleObj : { padding: "0" }} onChange={selectHandler}>
+          {data?.comics == "Marvel" && <p className={Style.detailHero}>The cinematic universe was first presented in 2008 with Iron Man and reached 29 films in 14 years.</p> || <select style={hideDetail ? selectStyleObj : { marginLeft: "130px", marginTop: "-20px" }} onChange={selectHandler}>
             <option> Choose a Member!</option>
-            {heroNames}
+           {heroNames}
           </select>}
 
         {/* </ul> */}

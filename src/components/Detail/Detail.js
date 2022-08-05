@@ -1,9 +1,18 @@
 import React from 'react'
 import Style from "./Detail.module.scss"
 function Detail({ data, select, hideDetail }) {
+ 
+
+  const onClickHero = () => {
+   
+   console.log(data?.members?.find((equip) => equip.heroName === select)?.equipment?.map((el,index) => el?.src))
+  
+   
+  }
+
 
   // console.log("DETAIL",select)
-  const heroInfo = data?.members?.find(equip => equip.heroName === select)?.equipment?.map(el => <li>{el.name}</li>)
+  const heroInfo = data?.members?.find(equip => equip.heroName === select)?.equipment?.map(el => <li onClick={onClickHero}>{el.name}</li>)
   const getFounder = data?.founder?.map(f => <li key={f.id}>{f.name}</li>)
   // const getFounderImg = data?.founder?.src.map(f => <li key={f.id}>{f.src}</li>)
 
@@ -14,7 +23,7 @@ function Detail({ data, select, hideDetail }) {
   // const selectHandler = (e) => {
   //   setSelect(e.target.value)
   // }
-
+ 
 
 
   return (
