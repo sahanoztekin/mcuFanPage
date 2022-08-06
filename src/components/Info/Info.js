@@ -35,7 +35,7 @@ const Detail = ({ data, setSelect, setHideDetail, hideDetail, select }) => {
       </div>
             
         
-          {data?.comics == "Marvel" && <p className={Style.detailHero}>.</p> || <select style={hideDetail ? selectStyleObj : { marginLeft: "130px", marginTop: "-20px" }} 
+          {data?.comics == "Marvel" && <p className={Style.detailHero}>The cinematic universe was first presented in 2008 with Iron Man. Reached  29 films in 14 years.</p> || <select style={hideDetail ? selectStyleObj : { marginLeft: "130px", marginTop: "-20px" }} 
           onChange={selectHandler}>
             <option> Choose a Member!</option>
            {heroNames}
