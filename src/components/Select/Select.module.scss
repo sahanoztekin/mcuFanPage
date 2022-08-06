@@ -1,0 +1,59 @@
+@import url('http://fonts.cdnfonts.com/css/lemonmilk');
+
+.select {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title {
+    height: max-content;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    padding-top: 10px;
+    font-family: 'Lemon/Milk', sans-serif;
+    font-size: 57.34px;
+    position: relative;
+    opacity: 0;
+    filter: blur(7px);
+    animation: fade-in 1s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
+    @keyframes fade-in {
+        100% {
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+
+}
+
+.line {
+    border: 2px solid #000000;
+    height: 558px;
+    width: 2px;
+    
+
+}
+
+.next_prev {
+    display: flex;
+    flex-direction: column;
+
+}
+
+button {
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    transition: 400ms;
+    border: none;
+
+    &:hover {
+        background-color: rgb(231, 231, 231);
+    }
+
+}
